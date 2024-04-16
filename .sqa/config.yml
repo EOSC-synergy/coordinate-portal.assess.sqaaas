@@ -1,0 +1,62 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: 2.0.0
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/cessda/coordinate-portal:
+      branch: main
+      repo: https://github.com/cessda/coordinate-portal
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/cessda/coordinate-portal git:
+        commands:
+        - /usr/bin/env sh .sqa/script.pokey-blue-fousek.sh
+        container: qc.acc_gamy-thistle-gar
+  QC.Doc:
+    repos:
+      github.com/cessda/coordinate-portal find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.homely-taupe-tortoise.sh
+        container: qc.doc_surly-brown-wildebeest
+      github.com/cessda/coordinate-portal git:
+        commands:
+        - /usr/bin/env sh .sqa/script.skanky-purple-cuscus.sh
+        container: qc.doc_woolly-lemon-tortoise
+      github.com/cessda/coordinate-portal markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.skinny-salmon-foxhound.sh
+        container: qc.doc_flimsy-cerise-bullfrog
+  QC.Lic:
+    repos:
+      github.com/cessda/coordinate-portal licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.lumpy-lime-guppy.sh
+        container: qc.lic_stinky-fuchsia-ray
+  QC.Met:
+    repos:
+      github.com/cessda/coordinate-portal cff-converter-python:
+        commands:
+        - /usr/bin/env sh .sqa/script.pasty-buff-fly.sh
+        container: qc.met_crabby-beige-cuttlefish
+  QC.Sty:
+    repos:
+      github.com/cessda/coordinate-portal hadolint:
+        commands:
+        - /usr/bin/env sh .sqa/script.fuzzy-heliotrope-woodpecker.sh
+        container: qc.sty_sleepy-pear-dane
+      github.com/cessda/coordinate-portal jsonlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.skimpy-purple-cheetah.sh
+        container: qc.sty_slaphappy-orchid-dachshund
+  QC.Ver:
+    repos:
+      github.com/cessda/coordinate-portal get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.snoopy-cinnabar-chinchilla.sh
+        container: qc.ver_greasy-azure-russel
+timeout: 5400
