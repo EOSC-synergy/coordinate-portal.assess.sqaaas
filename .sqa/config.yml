@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: 2.0.0
+      branch: release/2.0.1
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/cessda/coordinate-portal:
       branch: main
@@ -15,48 +15,48 @@ sqa_criteria:
     repos:
       github.com/cessda/coordinate-portal git:
         commands:
-        - /usr/bin/env sh .sqa/script.lovely-apricot-warthog.sh
-        container: qc.acc_gimpy-cyan-manatee
+        - /usr/bin/env sh .sqa/script.frumpy-seashell-goose.sh
+        container: qc.acc_breezy-sapphire-chin
   QC.Doc:
     repos:
       github.com/cessda/coordinate-portal find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.scummy-olivine-stoat.sh
-        container: qc.doc_smelly-gamboge-indri
+        - /usr/bin/env sh .sqa/script.gummy-dandelion-bison.sh
+        container: qc.doc_lovely-copper-wolf
       github.com/cessda/coordinate-portal git:
         commands:
-        - /usr/bin/env sh .sqa/script.skinny-pumpkin-olm.sh
-        container: qc.doc_geeky-burgundy-wombat
+        - /usr/bin/env sh .sqa/script.lousy-ruby-pinscher.sh
+        container: qc.doc_pasty-firebrick-caterpillar
       github.com/cessda/coordinate-portal markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.grumpy-denim-barb.sh
-        container: qc.doc_bluesy-cornflower-chicken
+        - /usr/bin/env sh .sqa/script.hasty-orchid-centipede.sh
+        container: qc.doc_thirsty-persimmon-wasp
   QC.Lic:
     repos:
       github.com/cessda/coordinate-portal licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.tasty-rust-gorilla.sh
-        container: qc.lic_stinky-brass-dalmatian
+        - /usr/bin/env sh .sqa/script.snoopy-pink-squirt.sh
+        container: qc.lic_hilly-olivine-uguisu
   QC.Met:
     repos:
       github.com/cessda/coordinate-portal cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.shaggy-cinnamon-collie.sh
-        container: qc.met_cheeky-chartreuse-tortoise
+        - /usr/bin/env sh .sqa/script.sleazy-corn-robin.sh
+        container: qc.met_nippy-sapphire-toad
   QC.Sty:
     repos:
       github.com/cessda/coordinate-portal hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.messy-wheat-worm.sh
-        container: qc.sty_zippy-cardinal-beetle
+        - /usr/bin/env sh .sqa/script.randy-charcoal-kingfisher.sh
+        container: qc.sty_tasty-bronze-eel
       github.com/cessda/coordinate-portal jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.pretty-yellow-crane.sh
-        container: qc.sty_frumpy-vermilion-schnauzer
+        - /usr/bin/env sh .sqa/script.ugly-teal-toad.sh
+        container: qc.sty_goopy-harlequin-saola
   QC.Ver:
     repos:
       github.com/cessda/coordinate-portal get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.woolly-carmine-jackal.sh
-        container: qc.ver_sleepy-buff-spaniel
+        - /usr/bin/env sh .sqa/script.homey-violet-audemer.sh
+        container: qc.ver_thirsty-magenta-toucan
 timeout: 5400
