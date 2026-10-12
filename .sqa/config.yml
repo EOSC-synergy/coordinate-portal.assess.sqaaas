@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/2.0.1
+      branch: fix/updatego
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/cessda/coordinate-portal:
       branch: main
@@ -15,48 +15,48 @@ sqa_criteria:
     repos:
       github.com/cessda/coordinate-portal git:
         commands:
-        - /usr/bin/env sh .sqa/script.lumpy-celadon-koala.sh
-        container: qc.acc_woozy-denim-otter
+        - /usr/bin/env sh .sqa/script.white_enthusiastic_swan.sh
+        container: qc.acc_cosmos_peaceful_hornbill
   QC.Doc:
     repos:
       github.com/cessda/coordinate-portal find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.lanky-firebrick-angora.sh
-        container: qc.doc_wiggy-beige-stingray
+        - /usr/bin/env sh .sqa/script.gold_confident_kiwi.sh
+        container: qc.doc_crimson_insightful_baboon
       github.com/cessda/coordinate-portal git:
         commands:
-        - /usr/bin/env sh .sqa/script.craggy-asparagus-tiger.sh
-        container: qc.doc_wimpy-seashell-baboon
+        - /usr/bin/env sh .sqa/script.chocolate_attentive_roadrunner.sh
+        container: qc.doc_butterscotch_impulsive_catfish
       github.com/cessda/coordinate-portal markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.breezy-brass-hornet.sh
-        container: qc.doc_gloppy-apricot-sheep
+        - /usr/bin/env sh .sqa/script.bone_realistic_capybara.sh
+        container: qc.doc_fern_insightful_grizzly
   QC.Lic:
     repos:
       github.com/cessda/coordinate-portal licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.cheeky-amethyst-vole.sh
-        container: qc.lic_shabby-cardinal-bonobo
+        - /usr/bin/env sh .sqa/script.royal_respectful_pegasus.sh
+        container: qc.lic_ebony_assured_rattlesnake
   QC.Met:
     repos:
       github.com/cessda/coordinate-portal cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.whiny-ruby-dugong.sh
-        container: qc.met_sleepy-grey-whale
+        - /usr/bin/env sh .sqa/script.copper_enthusiastic_wolverine.sh
+        container: qc.met_cardamom_mature_manatee
   QC.Sty:
     repos:
       github.com/cessda/coordinate-portal hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.wimpy-dandelion-terrier.sh
-        container: qc.sty_woolly-pear-capybara
+        - /usr/bin/env sh .sqa/script.rose_logical_bison.sh
+        container: qc.sty_glaucous_nervous_kingfisher
       github.com/cessda/coordinate-portal jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.frumpy-ultramarine-dragonfly.sh
-        container: qc.sty_wimpy-russet-mule
+        - /usr/bin/env sh .sqa/script.heather_driven_impala.sh
+        container: qc.sty_blush_peppy_bison
   QC.Ver:
     repos:
       github.com/cessda/coordinate-portal get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.trippy-jade-wallaby.sh
-        container: qc.ver_silly-alizarin-uakari
+        - /usr/bin/env sh .sqa/script.amaranth_foolish_sphinx.sh
+        container: qc.ver_glacier_exuberant_albatross
 timeout: 5400

@@ -5,5 +5,5 @@
 
 (
 cd github.com/cessda/coordinate-portal &&
-    cffconvert --validate
+    mdl --json  .
 )

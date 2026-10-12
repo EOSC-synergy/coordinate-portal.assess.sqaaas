@@ -5,5 +5,5 @@
 
 (
 cd github.com/cessda/coordinate-portal &&
-    licensee detect . --confidence 60 --json
+    licensee detect . --confidence 60 --json 
 )

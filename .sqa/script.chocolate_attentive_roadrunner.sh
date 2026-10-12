@@ -5,5 +5,5 @@
 
 (
 cd github.com/cessda/coordinate-portal &&
-    git rev-parse --is-inside-work-tree
+    git rev-parse --is-inside-work-tree 
 )
