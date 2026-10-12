@@ -15,48 +15,48 @@ sqa_criteria:
     repos:
       github.com/cessda/coordinate-portal git:
         commands:
-        - /usr/bin/env sh .sqa/script.white_enthusiastic_swan.sh
-        container: qc.acc_cosmos_peaceful_hornbill
+        - /usr/bin/env sh .sqa/script.peach_brave_goat.sh
+        container: qc.acc_plum_diplomatic_grizzly
   QC.Doc:
     repos:
       github.com/cessda/coordinate-portal find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.gold_confident_kiwi.sh
-        container: qc.doc_crimson_insightful_baboon
+        - /usr/bin/env sh .sqa/script.bronze_driven_kookaburra.sh
+        container: qc.doc_grape_flexible_opossum
       github.com/cessda/coordinate-portal git:
         commands:
-        - /usr/bin/env sh .sqa/script.chocolate_attentive_roadrunner.sh
-        container: qc.doc_butterscotch_impulsive_catfish
+        - /usr/bin/env sh .sqa/script.tan_determined_meerkat.sh
+        container: qc.doc_pine_open_manta
       github.com/cessda/coordinate-portal markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.bone_realistic_capybara.sh
-        container: qc.doc_fern_insightful_grizzly
+        - /usr/bin/env sh .sqa/script.taupe_quirky_panda.sh
+        container: qc.doc_dawn_spirited_thrush
   QC.Lic:
     repos:
       github.com/cessda/coordinate-portal licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.royal_respectful_pegasus.sh
-        container: qc.lic_ebony_assured_rattlesnake
+        - /usr/bin/env sh .sqa/script.sage_adventurous_dragon.sh
+        container: qc.lic_persimmon_unique_lobster
   QC.Met:
     repos:
       github.com/cessda/coordinate-portal cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.copper_enthusiastic_wolverine.sh
-        container: qc.met_cardamom_mature_manatee
+        - /usr/bin/env sh .sqa/script.cardamom_devoted_roadrunner.sh
+        container: qc.met_watermelon_devoted_manatee
   QC.Sty:
     repos:
       github.com/cessda/coordinate-portal hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.rose_logical_bison.sh
-        container: qc.sty_glaucous_nervous_kingfisher
+        - /usr/bin/env sh .sqa/script.aqua_trustworthy_lemur.sh
+        container: qc.sty_ruby_innocent_manta
       github.com/cessda/coordinate-portal jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.heather_driven_impala.sh
-        container: qc.sty_blush_peppy_bison
+        - /usr/bin/env sh .sqa/script.sunset_smart_unicorn.sh
+        container: qc.sty_powder_delighted_hummingbird
   QC.Ver:
     repos:
       github.com/cessda/coordinate-portal get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.amaranth_foolish_sphinx.sh
-        container: qc.ver_glacier_exuberant_albatross
+        - /usr/bin/env sh .sqa/script.lemon_bright_giraffe.sh
+        container: qc.ver_malachite_driven_stingray
 timeout: 5400
